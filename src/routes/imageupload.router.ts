@@ -11,7 +11,7 @@ const imageUploadRouter = Router();
 
 imageUploadRouter.post(
   "/upload",
-  upload.single(" "),
+  upload.single("image"),
   optimizeImageQuality,
   handleImageUpload
 );
