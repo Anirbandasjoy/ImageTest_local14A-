@@ -12,7 +12,7 @@ export const handleImageUpload = async (
   next: NextFunction
 ): Promise<void> => {
   try {
-    const { author_name, description, keywords = ["hello", "test"] } = req.body;
+    const { author_name, description, keywords } = req.body;
     console.log({ author_name, description, keywords });
     const imageFile = req.file?.filename;
     if (!imageFile) {
