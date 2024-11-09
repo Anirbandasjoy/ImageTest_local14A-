@@ -17,7 +17,7 @@ const imageSchema = new Schema<IPlace>(
       maxlength: 500,
     },
 
-    keyords: {
+    keywords: {
       type: [String],
       required: [true, "keyords is required"],
     },
